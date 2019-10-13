@@ -20,7 +20,7 @@
 #define TOPIC "org.github.matatata.stayawake.notify"
 static CFStringRef NAME = CFSTR("org.github.matatata.stayawake");
 
-static IOPMAssertionID  keep_awake = kIOPMNullAssertionID; /* Keep the system awake while printing */
+static IOPMAssertionID  keep_awake = kIOPMNullAssertionID; /* assertion id */
 
 static bool _shouldStayAwake=1;
 static const char* command=NULL;
