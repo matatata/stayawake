@@ -17,9 +17,9 @@
 #include <unistd.h>
 
 
-//#define kIOPMSystemPowerStateNotify "com.apple.powermanagement.systempowerstate"
-#define TOPIC "de.infomac.stayawake.notify"
-static CFStringRef NAME = CFSTR("de.infomac.stayawake");
+
+#define TOPIC "org.github.matatata.stayawake.notify"
+static CFStringRef NAME = CFSTR("org.github.matatata.stayawake");
 
 static IOPMAssertionID  keep_awake = kIOPMNullAssertionID; /* Keep the system awake while printing */
 
@@ -79,7 +79,7 @@ static void onPowerNotification(int token) {
 
 		if(verbose) NSLog(@"Need to may an asseriton to stay awake");
 
-		IOReturn ret = createAssertion("de.infomac.stayawake");
+		IOReturn ret = createAssertion("org.github.matatata.stayawake");
 
 		if (kIOReturnSuccess != ret) {
 			NSLog(@"failed to create assertion");
