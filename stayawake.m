@@ -1,9 +1,8 @@
 //
-//  main.m
-//  powerdoc
+//  stayawake.m
+
 //
-//  Created by mceruti on 04.09.19.
-//  Copyright © 2019 infomac. All rights reserved.
+//  Created by Matatata on 04.09.19.
 //
 #include <signal.h>
 #include <CoreFoundation/CoreFoundation.h>
